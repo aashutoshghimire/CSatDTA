@@ -1,0 +1,330 @@
+Namespace(batch_size=256, binary_th=0.0, checkpoint_path='', dataset_path='data/kiba/', is_log=0, learning_rate=0.001, log_dir='logs/', max_seq_len=1000, max_smi_len=100, num_classes=0, num_epoch=100, num_hidden=0, num_windows=[32], problem_type=1, seq_window_lengths=[8, 12], smi_window_lengths=[4, 8])
+---Parameter Search-----
+Namespace(batch_size=256, binary_th=0.0, checkpoint_path='', dataset_path='data/kiba/', is_log=0, learning_rate=0.001, log_dir='logs/', max_seq_len=1000, max_smi_len=100, num_classes=0, num_epoch=100, num_hidden=0, num_windows=[32], problem_type=1, seq_window_lengths=[8, 12], smi_window_lengths=[4, 8])
+---Parameter Search-----
+Namespace(batch_size=256, binary_th=0.0, checkpoint_path='', dataset_path='data/kiba/', is_log=0, learning_rate=0.001, log_dir='logs/', max_seq_len=1000, max_smi_len=100, num_classes=0, num_epoch=100, num_hidden=0, num_windows=[32], problem_type=1, seq_window_lengths=[8, 12], smi_window_lengths=[4, 8])
+---Parameter Search-----
+Namespace(batch_size=256, binary_th=0.0, checkpoint_path='', dataset_path='data/kiba/', is_log=0, learning_rate=0.001, log_dir='logs/', max_seq_len=1000, max_smi_len=100, num_classes=0, num_epoch=100, num_hidden=0, num_windows=[32], problem_type=1, seq_window_lengths=[8, 12], smi_window_lengths=[4, 8])
+---Parameter Search-----
+Namespace(batch_size=256, binary_th=0.0, checkpoint_path='', dataset_path='data/kiba/', is_log=0, learning_rate=0.001, log_dir='logs/', max_seq_len=1000, max_smi_len=100, num_classes=0, num_epoch=2, num_hidden=0, num_windows=[32], problem_type=1, seq_window_lengths=[8, 12], smi_window_lengths=[4, 8])
+---Parameter Search-----
+P1 = 0,  P2 = 0, P3 = 0, Fold = 0, CI-i = 0.728822, CI-ii = 0.728342, MSE = 0.482924
+Namespace(batch_size=256, binary_th=0.0, checkpoint_path='', dataset_path='data/kiba/', is_log=0, learning_rate=0.001, log_dir='logs/', max_seq_len=1000, max_smi_len=100, num_classes=0, num_epoch=100, num_hidden=0, num_windows=[32], problem_type=1, seq_window_lengths=[8, 12], smi_window_lengths=[4, 8])
+---Parameter Search-----
+Namespace(batch_size=256, binary_th=0.0, checkpoint_path='', dataset_path='data/kiba/', is_log=0, learning_rate=0.001, log_dir='logs/', max_seq_len=1000, max_smi_len=100, num_classes=0, num_epoch=2, num_hidden=0, num_windows=[32], problem_type=1, seq_window_lengths=[8, 12], smi_window_lengths=[4, 8])
+---Parameter Search-----
+---Parameter Search-----
+---Parameter Search-----
+Namespace(batch_size=256, binary_th=0.0, checkpoint_path='', dataset_path='data/kiba/', is_log=0, learning_rate=0.001, log_dir='logs/', max_seq_len=1000, max_smi_len=100, num_classes=0, num_epoch=2, num_hidden=0, num_windows=[32], problem_type=1, seq_window_lengths=[8, 12], smi_window_lengths=[4, 8])
+Namespace(batch_size=256, binary_th=0.0, checkpoint_path='', dataset_path='data/kiba/', is_log=0, learning_rate=0.001, log_dir='logs/', max_seq_len=1000, max_smi_len=100, num_classes=0, num_epoch=2, num_hidden=0, num_windows=[32], problem_type=1, seq_window_lengths=[8, 12], smi_window_lengths=[4, 8])
+---Parameter Search-----
+Namespace(batch_size=256, binary_th=0.0, checkpoint_path='', dataset_path='data/kiba/', is_log=0, learning_rate=0.001, log_dir='logs/', max_seq_len=1000, max_smi_len=100, num_classes=0, num_epoch=2, num_hidden=0, num_windows=[32], problem_type=1, seq_window_lengths=[8, 12], smi_window_lengths=[4, 8])
+---Parameter Search-----
+Namespace(batch_size=256, binary_th=0.0, checkpoint_path='', dataset_path='data/kiba/', is_log=0, learning_rate=0.001, log_dir='logs/', max_seq_len=1000, max_smi_len=100, num_classes=0, num_epoch=2, num_hidden=0, num_windows=[32], problem_type=1, seq_window_lengths=[8, 12], smi_window_lengths=[4, 8])
+---Parameter Search-----
+Namespace(batch_size=256, binary_th=0.0, checkpoint_path='', dataset_path='data/kiba/', is_log=0, learning_rate=0.001, log_dir='logs/', max_seq_len=1000, max_smi_len=100, num_classes=0, num_epoch=2, num_hidden=0, num_windows=[32], problem_type=1, seq_window_lengths=[8, 12], smi_window_lengths=[4, 8])
+---Parameter Search-----
+Namespace(batch_size=256, binary_th=0.0, checkpoint_path='', dataset_path='data/kiba/', is_log=0, learning_rate=0.001, log_dir='logs/', max_seq_len=1000, max_smi_len=100, num_classes=0, num_epoch=2, num_hidden=0, num_windows=[32], problem_type=1, seq_window_lengths=[8, 12], smi_window_lengths=[4, 8])
+---Parameter Search-----
+P1 = 0,  P2 = 0, P3 = 0, Fold = 0, CI-i = 0.731315, CI-ii = 0.730906, MSE = 0.478094
+Namespace(batch_size=256, binary_th=0.0, checkpoint_path='', dataset_path='data/kiba/', is_log=0, learning_rate=0.001, log_dir='logs/', max_seq_len=1000, max_smi_len=100, num_classes=0, num_epoch=2, num_hidden=0, num_windows=[32], problem_type=1, seq_window_lengths=[8, 12], smi_window_lengths=[4, 8])
+---Parameter Search-----
+P1 = 0,  P2 = 0, P3 = 0, Fold = 0, CI-i = 0.733624, CI-ii = 0.733248, MSE = 0.478765
+P1 = 0,  P2 = 0, P3 = 1, Fold = 0, CI-i = 0.733023, CI-ii = 0.732446, MSE = 0.502193
+Namespace(batch_size=256, binary_th=0.0, checkpoint_path='', dataset_path='data/kiba/', is_log=0, learning_rate=0.001, log_dir='logs/', max_seq_len=1000, max_smi_len=100, num_classes=0, num_epoch=2, num_hidden=0, num_windows=[32], problem_type=1, seq_window_lengths=[8, 12], smi_window_lengths=[4, 8])
+Namespace(batch_size=256, binary_th=0.0, checkpoint_path='', dataset_path='data/kiba/', is_log=0, learning_rate=0.001, log_dir='logs/', max_seq_len=1000, max_smi_len=100, num_classes=0, num_epoch=2, num_hidden=0, num_windows=[32], problem_type=1, seq_window_lengths=[8, 12], smi_window_lengths=[4, 8])
+Namespace(batch_size=256, binary_th=0.0, checkpoint_path='', dataset_path='data/kiba/', is_log=0, learning_rate=0.001, log_dir='logs/', max_seq_len=1000, max_smi_len=100, num_classes=0, num_epoch=2, num_hidden=0, num_windows=[32], problem_type=1, seq_window_lengths=[8, 12], smi_window_lengths=[4, 8])
+---Parameter Search-----
+P1 = 0,  P2 = 0, P3 = 0, Fold = 0, CI-i = 0.724521, CI-ii = 0.724686, MSE = 0.500210
+Namespace(batch_size=256, binary_th=0.0, checkpoint_path='', dataset_path='data/kiba/', is_log=0, learning_rate=0.001, log_dir='logs/', max_seq_len=1000, max_smi_len=100, num_classes=0, num_epoch=2, num_hidden=0, num_windows=[32], problem_type=1, seq_window_lengths=[8, 12], smi_window_lengths=[4, 8])
+---Parameter Search-----
+---Parameter Search-----
+Namespace(batch_size=256, binary_th=0.0, checkpoint_path='', dataset_path='data/kiba/', is_log=0, learning_rate=0.001, log_dir='logs/', max_seq_len=1000, max_smi_len=100, num_classes=0, num_epoch=2, num_hidden=0, num_windows=[32], problem_type=1, seq_window_lengths=[8, 12], smi_window_lengths=[4, 8])
+---Parameter Search-----
+Namespace(batch_size=256, binary_th=0.0, checkpoint_path='', dataset_path='data/kiba/', is_log=0, learning_rate=0.001, log_dir='logs/', max_seq_len=1000, max_smi_len=100, num_classes=0, num_epoch=2, num_hidden=0, num_windows=[32], problem_type=1, seq_window_lengths=[8, 12], smi_window_lengths=[4, 8])
+---Parameter Search-----
+P1 = 0,  P2 = 0, P3 = 0, Fold = 0, CI-i = 0.732700, CI-ii = 0.732351, MSE = 0.466402
+---Parameter Search-----
+P1 = 0,  P2 = 0, P3 = 0, Fold = 0, CI-i = 0.732389, CI-ii = 0.731220, MSE = 0.459035
+---FINAL RESULTS-----
+best param index = 0,  best param = 0.00000
+Test Performance CI
+[0.732388619161704, 0, 0, 0, 0]
+Test Performance MSE
+[0.45903468132019043, 0, 0, 0, 0]
+Setting 1
+avg_perf = 0.14648,  avg_mse = 0.09181, std = 0.29296
+Namespace(batch_size=256, binary_th=0.0, checkpoint_path='', dataset_path='data/kiba/', is_log=0, learning_rate=0.001, log_dir='logs/', max_seq_len=1000, max_smi_len=100, num_classes=0, num_epoch=2, num_hidden=0, num_windows=[32], problem_type=1, seq_window_lengths=[8, 12], smi_window_lengths=[4, 8])
+Namespace(batch_size=256, binary_th=0.0, checkpoint_path='', dataset_path='data/kiba/', is_log=0, learning_rate=0.001, log_dir='logs/', max_seq_len=1000, max_smi_len=100, num_classes=0, num_epoch=2, num_hidden=0, num_windows=[32], problem_type=1, seq_window_lengths=[8, 12], smi_window_lengths=[4, 8])
+---Parameter Search-----
+P1 = 0,  P2 = 0, P3 = 0, Fold = 0, CI-i = 0.730922, CI-ii = 0.730511, MSE = 0.472193
+---Parameter Search-----
+P1 = 0,  P2 = 0, P3 = 0, Fold = 0, CI-i = 0.726091, CI-ii = 0.725713, MSE = 0.496751
+---FINAL RESULTS-----
+best param index = 0,  best param = 0.00000
+Test Performance CI
+[0.7260907471639659, 0, 0, 0, 0]
+Test Performance MSE
+[0.49675053358078003, 0, 0, 0, 0]
+Setting 1
+avg_perf = 0.14522,  avg_mse = 0.09935, std = 0.29044
+Namespace(batch_size=256, binary_th=0.0, checkpoint_path='', dataset_path='data/kiba/', is_log=0, learning_rate=0.001, log_dir='logs/', max_seq_len=1000, max_smi_len=100, num_classes=0, num_epoch=2, num_hidden=0, num_windows=[32], problem_type=1, seq_window_lengths=[8, 12], smi_window_lengths=[4, 8])
+---Parameter Search-----
+Namespace(batch_size=256, binary_th=0.0, checkpoint_path='', dataset_path='data/kiba/', is_log=0, learning_rate=0.001, log_dir='logs/', max_seq_len=1000, max_smi_len=100, num_classes=0, num_epoch=2, num_hidden=0, num_windows=[32], problem_type=1, seq_window_lengths=[8, 12], smi_window_lengths=[4, 8])
+---Parameter Search-----
+---Parameter Search-----
+P1 = 0,  P2 = 0, P3 = 0, Fold = 0, CI-i = 0.733371, CI-ii = 0.732581, MSE = 0.471102
+---Parameter Search-----
+Namespace(batch_size=256, binary_th=0.0, checkpoint_path='', dataset_path='data/kiba/', is_log=0, learning_rate=0.001, log_dir='logs/', max_seq_len=1000, max_smi_len=100, num_classes=0, num_epoch=2, num_hidden=0, num_windows=[32], problem_type=1, seq_window_lengths=[8, 12], smi_window_lengths=[4, 8])
+---Parameter Search-----
+Namespace(batch_size=256, binary_th=0.0, checkpoint_path='', dataset_path='data/kiba/', is_log=0, learning_rate=0.001, log_dir='logs/', max_seq_len=1000, max_smi_len=100, num_classes=0, num_epoch=2, num_hidden=0, num_windows=[32], problem_type=1, seq_window_lengths=[8, 12], smi_window_lengths=[4, 8])
+---Parameter Search-----
+Namespace(batch_size=256, binary_th=0.0, checkpoint_path='', dataset_path='data/kiba/', is_log=0, learning_rate=0.001, log_dir='logs/', max_seq_len=1000, max_smi_len=100, num_classes=0, num_epoch=2, num_hidden=0, num_windows=[32], problem_type=1, seq_window_lengths=[8, 12], smi_window_lengths=[4, 8])
+---Parameter Search-----
+Namespace(batch_size=256, binary_th=0.0, checkpoint_path='', dataset_path='data/kiba/', is_log=0, learning_rate=0.001, log_dir='logs/', max_seq_len=1000, max_smi_len=100, num_classes=0, num_epoch=100, num_hidden=0, num_windows=[32], problem_type=1, seq_window_lengths=[8, 12], smi_window_lengths=[4, 8])
+---Parameter Search-----
+Namespace(batch_size=256, binary_th=0.0, checkpoint_path='', dataset_path='data/kiba/', is_log=0, learning_rate=0.001, log_dir='logs/', max_seq_len=1000, max_smi_len=100, num_classes=0, num_epoch=2, num_hidden=0, num_windows=[32], problem_type=1, seq_window_lengths=[8, 12], smi_window_lengths=[4, 8])
+---Parameter Search-----
+Namespace(batch_size=256, binary_th=0.0, checkpoint_path='', dataset_path='data/kiba/', is_log=0, learning_rate=0.001, log_dir='logs/', max_seq_len=1000, max_smi_len=100, num_classes=0, num_epoch=2, num_hidden=0, num_windows=[32], problem_type=1, seq_window_lengths=[8, 12], smi_window_lengths=[4, 8])
+---Parameter Search-----
+Namespace(batch_size=256, binary_th=0.0, checkpoint_path='', dataset_path='data/kiba/', is_log=0, learning_rate=0.001, log_dir='logs/', max_seq_len=1000, max_smi_len=100, num_classes=0, num_epoch=2, num_hidden=0, num_windows=[32], problem_type=1, seq_window_lengths=[8, 12], smi_window_lengths=[4, 8])
+---Parameter Search-----
+Namespace(batch_size=256, binary_th=0.0, checkpoint_path='', dataset_path='data/kiba/', is_log=0, learning_rate=0.001, log_dir='logs/', max_seq_len=1000, max_smi_len=100, num_classes=0, num_epoch=2, num_hidden=0, num_windows=[32], problem_type=1, seq_window_lengths=[8, 12], smi_window_lengths=[4, 8])
+---Parameter Search-----
+Namespace(batch_size=256, binary_th=0.0, checkpoint_path='', dataset_path='data/kiba/', is_log=0, learning_rate=0.001, log_dir='logs/', max_seq_len=1000, max_smi_len=100, num_classes=0, num_epoch=2, num_hidden=0, num_windows=[32], problem_type=1, seq_window_lengths=[8, 12], smi_window_lengths=[4, 8])
+---Parameter Search-----
+Namespace(batch_size=256, binary_th=0.0, checkpoint_path='', dataset_path='data/kiba/', is_log=0, learning_rate=0.001, log_dir='logs/', max_seq_len=1000, max_smi_len=100, num_classes=0, num_epoch=2, num_hidden=0, num_windows=[32], problem_type=1, seq_window_lengths=[8, 12], smi_window_lengths=[4, 8])
+---Parameter Search-----
+Namespace(batch_size=256, binary_th=0.0, checkpoint_path='', dataset_path='data/kiba/', is_log=0, learning_rate=0.001, log_dir='logs/', max_seq_len=1000, max_smi_len=100, num_classes=0, num_epoch=2, num_hidden=0, num_windows=[32], problem_type=1, seq_window_lengths=[8, 12], smi_window_lengths=[4, 8])
+---Parameter Search-----
+Namespace(batch_size=256, binary_th=0.0, checkpoint_path='', dataset_path='data/kiba/', is_log=0, learning_rate=0.001, log_dir='logs/', max_seq_len=1000, max_smi_len=100, num_classes=0, num_epoch=2, num_hidden=0, num_windows=[32], problem_type=1, seq_window_lengths=[8, 12], smi_window_lengths=[4, 8])
+---Parameter Search-----
+Namespace(batch_size=256, binary_th=0.0, checkpoint_path='', dataset_path='data/kiba/', is_log=0, learning_rate=0.001, log_dir='logs/', max_seq_len=1000, max_smi_len=100, num_classes=0, num_epoch=100, num_hidden=0, num_windows=[32], problem_type=1, seq_window_lengths=[8, 12], smi_window_lengths=[4, 8])
+---Parameter Search-----
+Namespace(batch_size=256, binary_th=0.0, checkpoint_path='', dataset_path='data/kiba/', is_log=0, learning_rate=0.001, log_dir='logs/', max_seq_len=1000, max_smi_len=100, num_classes=0, num_epoch=100, num_hidden=0, num_windows=[32], problem_type=1, seq_window_lengths=[8, 12], smi_window_lengths=[4, 8])
+---Parameter Search-----
+Namespace(batch_size=256, binary_th=0.0, checkpoint_path='', dataset_path='data/kiba/', is_log=0, learning_rate=0.001, log_dir='logs/', max_seq_len=1000, max_smi_len=100, num_classes=0, num_epoch=2, num_hidden=0, num_windows=[32], problem_type=1, seq_window_lengths=[8, 12], smi_window_lengths=[4, 8])
+---Parameter Search-----
+Namespace(batch_size=256, binary_th=0.0, checkpoint_path='', dataset_path='data/kiba/', is_log=0, learning_rate=0.001, log_dir='logs/', max_seq_len=1000, max_smi_len=100, num_classes=0, num_epoch=2, num_hidden=0, num_windows=[32], problem_type=1, seq_window_lengths=[8, 12], smi_window_lengths=[4, 8])
+---Parameter Search-----
+Namespace(batch_size=256, binary_th=0.0, checkpoint_path='', dataset_path='data/kiba/', is_log=0, learning_rate=0.001, log_dir='logs/', max_seq_len=1000, max_smi_len=100, num_classes=0, num_epoch=2, num_hidden=0, num_windows=[32], problem_type=1, seq_window_lengths=[8, 12], smi_window_lengths=[4, 8])
+---Parameter Search-----
+Namespace(batch_size=256, binary_th=0.0, checkpoint_path='', dataset_path='data/kiba/', is_log=0, learning_rate=0.001, log_dir='logs/', max_seq_len=1000, max_smi_len=100, num_classes=0, num_epoch=2, num_hidden=0, num_windows=[32], problem_type=1, seq_window_lengths=[8, 12], smi_window_lengths=[4, 8])
+---Parameter Search-----
+Namespace(batch_size=256, binary_th=0.0, checkpoint_path='', dataset_path='data/kiba/', is_log=0, learning_rate=0.001, log_dir='logs/', max_seq_len=1000, max_smi_len=100, num_classes=0, num_epoch=2, num_hidden=0, num_windows=[32], problem_type=1, seq_window_lengths=[8, 12], smi_window_lengths=[4, 8])
+---Parameter Search-----
+Namespace(batch_size=256, binary_th=0.0, checkpoint_path='', dataset_path='data/kiba/', is_log=0, learning_rate=0.001, log_dir='logs/', max_seq_len=1000, max_smi_len=100, num_classes=0, num_epoch=2, num_hidden=0, num_windows=[32], problem_type=1, seq_window_lengths=[8, 12], smi_window_lengths=[4, 8])
+---Parameter Search-----
+Namespace(batch_size=256, binary_th=0.0, checkpoint_path='', dataset_path='data/kiba/', is_log=0, learning_rate=0.001, log_dir='logs/', max_seq_len=1000, max_smi_len=100, num_classes=0, num_epoch=2, num_hidden=0, num_windows=[32], problem_type=1, seq_window_lengths=[8, 12], smi_window_lengths=[4, 8])
+---Parameter Search-----
+Namespace(batch_size=256, binary_th=0.0, checkpoint_path='', dataset_path='data/kiba/', is_log=0, learning_rate=0.001, log_dir='logs/', max_seq_len=1000, max_smi_len=100, num_classes=0, num_epoch=100, num_hidden=0, num_windows=[32], problem_type=1, seq_window_lengths=[8, 12], smi_window_lengths=[4, 8])
+---Parameter Search-----
+Namespace(batch_size=256, binary_th=0.0, checkpoint_path='', dataset_path='data/kiba/', is_log=0, learning_rate=0.001, log_dir='logs/', max_seq_len=1000, max_smi_len=100, num_classes=0, num_epoch=2, num_hidden=0, num_windows=[32], problem_type=1, seq_window_lengths=[8, 12], smi_window_lengths=[4, 8])
+---Parameter Search-----
+Namespace(batch_size=256, binary_th=0.0, checkpoint_path='', dataset_path='data/kiba/', is_log=0, learning_rate=0.001, log_dir='logs/', max_seq_len=1000, max_smi_len=100, num_classes=0, num_epoch=2, num_hidden=0, num_windows=[32], problem_type=1, seq_window_lengths=[8, 12], smi_window_lengths=[4, 8])
+---Parameter Search-----
+Namespace(batch_size=256, binary_th=0.0, checkpoint_path='', dataset_path='data/kiba/', is_log=0, learning_rate=0.001, log_dir='logs/', max_seq_len=1000, max_smi_len=100, num_classes=0, num_epoch=1, num_hidden=0, num_windows=[32], problem_type=1, seq_window_lengths=[8, 12], smi_window_lengths=[4, 8])
+---Parameter Search-----
+---Parameter Search-----
+---FINAL RESULTS-----
+Namespace(batch_size=256, binary_th=0.0, checkpoint_path='', dataset_path='data/kiba/', is_log=0, learning_rate=0.001, log_dir='logs/', max_seq_len=1000, max_smi_len=100, num_classes=0, num_epoch=100, num_hidden=0, num_windows=[32], problem_type=1, seq_window_lengths=[8, 12], smi_window_lengths=[4, 8])
+---Parameter Search-----
+---Parameter Search-----
+Namespace(batch_size=256, binary_th=0.0, checkpoint_path='', dataset_path='data/kiba/', is_log=0, learning_rate=0.001, log_dir='logs/', max_seq_len=1000, max_smi_len=100, num_classes=0, num_epoch=1, num_hidden=0, num_windows=[32], problem_type=1, seq_window_lengths=[8, 12], smi_window_lengths=[4, 8])
+---Parameter Search-----
+Namespace(batch_size=256, binary_th=0.0, checkpoint_path='', dataset_path='data/kiba/', is_log=0, learning_rate=0.001, log_dir='logs/', max_seq_len=1000, max_smi_len=100, num_classes=0, num_epoch=1, num_hidden=0, num_windows=[32], problem_type=1, seq_window_lengths=[8, 12], smi_window_lengths=[4, 8])
+---Parameter Search-----
+---Parameter Search-----
+---Parameter Search-----
+Namespace(batch_size=256, binary_th=0.0, checkpoint_path='', dataset_path='data/kiba/', is_log=0, learning_rate=0.001, log_dir='logs/', max_seq_len=1000, max_smi_len=100, num_classes=0, num_epoch=1, num_hidden=0, num_windows=[32], problem_type=1, seq_window_lengths=[8, 12], smi_window_lengths=[4, 8])
+---Parameter Search-----
+---Parameter Search-----
+Namespace(batch_size=256, binary_th=0.0, checkpoint_path='', dataset_path='data/kiba/', is_log=0, learning_rate=0.001, log_dir='logs/', max_seq_len=1000, max_smi_len=100, num_classes=0, num_epoch=1, num_hidden=0, num_windows=[32], problem_type=1, seq_window_lengths=[8, 12], smi_window_lengths=[4, 8])
+---Parameter Search-----
+---Parameter Search-----
+Setting 1
+Namespace(batch_size=256, binary_th=0.0, checkpoint_path='', dataset_path='data/kiba/', is_log=0, learning_rate=0.001, log_dir='logs/', max_seq_len=1000, max_smi_len=100, num_classes=0, num_epoch=1, num_hidden=0, num_windows=[32], problem_type=1, seq_window_lengths=[8, 12], smi_window_lengths=[4, 8])
+---Parameter Search-----
+---Parameter Search-----
+---Parameter Search-----
+---Parameter Search-----
+---Parameter Search-----
+Namespace(batch_size=256, binary_th=0.0, checkpoint_path='', dataset_path='data/kiba/', is_log=0, learning_rate=0.001, log_dir='logs/', max_seq_len=1000, max_smi_len=100, num_classes=0, num_epoch=1, num_hidden=0, num_windows=[32], problem_type=1, seq_window_lengths=[8, 12], smi_window_lengths=[4, 8])
+---Parameter Search-----
+---Parameter Search-----
+Namespace(batch_size=256, binary_th=0.0, checkpoint_path='', dataset_path='data/kiba/', is_log=0, learning_rate=0.001, log_dir='logs/', max_seq_len=1000, max_smi_len=100, num_classes=0, num_epoch=1, num_hidden=0, num_windows=[32], problem_type=1, seq_window_lengths=[8, 12], smi_window_lengths=[4, 8])
+---Parameter Search-----
+---Parameter Search-----
+---Parameter Search-----
+---Parameter Search-----
+---Parameter Search-----
+---Parameter Search-----
+---Parameter Search-----
+---Parameter Search-----
+---Parameter Search-----
+---Parameter Search-----
+---Parameter Search-----
+---Parameter Search-----
+---Parameter Search-----
+---Parameter Search-----
+---Parameter Search-----
+---Parameter Search-----
+---Parameter Search-----
+---Parameter Search-----
+---Parameter Search-----
+---Parameter Search-----
+Namespace(batch_size=256, binary_th=0.0, checkpoint_path='', dataset_path='data/kiba/', is_log=0, learning_rate=0.001, log_dir='logs/', max_seq_len=1000, max_smi_len=100, num_classes=0, num_epoch=1, num_hidden=0, num_windows=[32], problem_type=1, seq_window_lengths=[8, 12], smi_window_lengths=[4, 8])
+---Parameter Search-----
+---Parameter Search-----
+---Parameter Search-----
+---Parameter Search-----
+---Parameter Search-----
+---Parameter Search-----
+---Parameter Search-----
+---Parameter Search-----
+---Parameter Search-----
+---Parameter Search-----
+---Parameter Search-----
+---Parameter Search-----
+Namespace(batch_size=256, binary_th=0.0, checkpoint_path='', dataset_path='data/kiba/', is_log=0, learning_rate=0.001, log_dir='logs/', max_seq_len=1000, max_smi_len=100, num_classes=0, num_epoch=1, num_hidden=0, num_windows=[32], problem_type=1, seq_window_lengths=[8, 12], smi_window_lengths=[4, 8])
+---Parameter Search-----
+Namespace(batch_size=256, binary_th=0.0, checkpoint_path='', dataset_path='data/kiba/', is_log=0, learning_rate=0.001, log_dir='logs/', max_seq_len=1000, max_smi_len=100, num_classes=0, num_epoch=1, num_hidden=0, num_windows=[32], problem_type=1, seq_window_lengths=[8, 12], smi_window_lengths=[4, 8])
+---Parameter Search-----
+---Parameter Search-----
+---Parameter Search-----
+---Parameter Search-----
+---Parameter Search-----
+---Parameter Search-----
+---Parameter Search-----
+---Parameter Search-----
+---Parameter Search-----
+---Parameter Search-----
+---Parameter Search-----
+---Parameter Search-----
+---Parameter Search-----
+---Parameter Search-----
+---Parameter Search-----
+---Parameter Search-----
+Namespace(batch_size=256, binary_th=0.0, checkpoint_path='', dataset_path='data/kiba/', is_log=0, learning_rate=0.001, log_dir='logs/', max_seq_len=1000, max_smi_len=100, num_classes=0, num_epoch=1, num_hidden=0, num_windows=[32], problem_type=1, seq_window_lengths=[8, 12], smi_window_lengths=[4, 8])
+---Parameter Search-----
+Namespace(batch_size=64, binary_th=0.0, checkpoint_path='', dataset_path='data/kiba/', is_log=0, learning_rate=0.001, log_dir='logs/', max_seq_len=1000, max_smi_len=100, num_classes=0, num_epoch=1, num_hidden=0, num_windows=[32], problem_type=1, seq_window_lengths=[8, 12], smi_window_lengths=[4, 8])
+---Parameter Search-----
+Namespace(batch_size=64, binary_th=0.0, checkpoint_path='', dataset_path='data/kiba/', is_log=0, learning_rate=0.001, log_dir='logs/', max_seq_len=1000, max_smi_len=100, num_classes=0, num_epoch=1, num_hidden=0, num_windows=[32], problem_type=1, seq_window_lengths=[8, 12], smi_window_lengths=[4, 8])
+---Parameter Search-----
+Namespace(batch_size=64, binary_th=0.0, checkpoint_path='', dataset_path='data/kiba/', is_log=0, learning_rate=0.001, log_dir='logs/', max_seq_len=1000, max_smi_len=100, num_classes=0, num_epoch=1, num_hidden=0, num_windows=[32], problem_type=1, seq_window_lengths=[8, 12], smi_window_lengths=[4, 8])
+---Parameter Search-----
+Namespace(batch_size=64, binary_th=0.0, checkpoint_path='', dataset_path='data/kiba/', is_log=0, learning_rate=0.001, log_dir='logs/', max_seq_len=1000, max_smi_len=100, num_classes=0, num_epoch=1, num_hidden=0, num_windows=[32], problem_type=1, seq_window_lengths=[8, 12], smi_window_lengths=[4, 8])
+---Parameter Search-----
+Namespace(batch_size=64, binary_th=0.0, checkpoint_path='', dataset_path='data/kiba/', is_log=0, learning_rate=0.001, log_dir='logs/', max_seq_len=1000, max_smi_len=100, num_classes=0, num_epoch=1, num_hidden=0, num_windows=[32], problem_type=1, seq_window_lengths=[8, 12], smi_window_lengths=[4, 8])
+---Parameter Search-----
+Namespace(batch_size=256, binary_th=0.0, checkpoint_path='', dataset_path='data/kiba/', is_log=0, learning_rate=0.001, log_dir='logs/', max_seq_len=1000, max_smi_len=100, num_classes=0, num_epoch=1, num_hidden=0, num_windows=[32], problem_type=1, seq_window_lengths=[8, 12], smi_window_lengths=[4, 8])
+---Parameter Search-----
+---Parameter Search-----
+Namespace(batch_size=256, binary_th=0.0, checkpoint_path='', dataset_path='data/kiba/', is_log=0, learning_rate=0.001, log_dir='logs/', max_seq_len=1000, max_smi_len=100, num_classes=0, num_epoch=1, num_hidden=0, num_windows=[32], problem_type=1, seq_window_lengths=[8, 12], smi_window_lengths=[4, 8])
+---Parameter Search-----
+Namespace(batch_size=256, binary_th=0.0, checkpoint_path='', dataset_path='data/kiba/', is_log=0, learning_rate=0.001, log_dir='logs/', max_seq_len=1000, max_smi_len=100, num_classes=0, num_epoch=1, num_hidden=0, num_windows=[32], problem_type=1, seq_window_lengths=[8, 12], smi_window_lengths=[4, 8])
+---Parameter Search-----
+Namespace(batch_size=256, binary_th=0.0, checkpoint_path='', dataset_path='data/kiba/', is_log=0, learning_rate=0.001, log_dir='logs/', max_seq_len=1000, max_smi_len=100, num_classes=0, num_epoch=1, num_hidden=0, num_windows=[32], problem_type=1, seq_window_lengths=[8, 12], smi_window_lengths=[4, 8])
+---Parameter Search-----
+Namespace(batch_size=128, binary_th=0.0, checkpoint_path='', dataset_path='data/kiba/', is_log=0, learning_rate=0.001, log_dir='logs/', max_seq_len=1000, max_smi_len=100, num_classes=0, num_epoch=1, num_hidden=0, num_windows=[32], problem_type=1, seq_window_lengths=[8, 12], smi_window_lengths=[4, 8])
+---Parameter Search-----
+Namespace(batch_size=64, binary_th=0.0, checkpoint_path='', dataset_path='data/kiba/', is_log=0, learning_rate=0.001, log_dir='logs/', max_seq_len=1000, max_smi_len=100, num_classes=0, num_epoch=1, num_hidden=0, num_windows=[32], problem_type=1, seq_window_lengths=[8, 12], smi_window_lengths=[4, 8])
+---Parameter Search-----
+Namespace(batch_size=64, binary_th=0.0, checkpoint_path='', dataset_path='data/kiba/', is_log=0, learning_rate=0.001, log_dir='logs/', max_seq_len=1000, max_smi_len=100, num_classes=0, num_epoch=100, num_hidden=0, num_windows=[32], problem_type=1, seq_window_lengths=[8, 12], smi_window_lengths=[4, 8])
+---Parameter Search-----
+---Parameter Search-----
+Namespace(batch_size=64, binary_th=0.0, checkpoint_path='', dataset_path='data/kiba/', is_log=0, learning_rate=0.001, log_dir='logs/', max_seq_len=1000, max_smi_len=100, num_classes=0, num_epoch=100, num_hidden=0, num_windows=[32], problem_type=1, seq_window_lengths=[8, 12], smi_window_lengths=[4, 8])
+---Parameter Search-----
+Namespace(batch_size=64, binary_th=0.0, checkpoint_path='', dataset_path='data/kiba/', is_log=0, learning_rate=0.001, log_dir='logs/', max_seq_len=1000, max_smi_len=100, num_classes=0, num_epoch=100, num_hidden=0, num_windows=[32], problem_type=1, seq_window_lengths=[8, 12], smi_window_lengths=[4, 8])
+---Parameter Search-----
+Namespace(batch_size=64, binary_th=0.0, checkpoint_path='', dataset_path='data/kiba/', is_log=0, learning_rate=0.001, log_dir='logs/', max_seq_len=1000, max_smi_len=100, num_classes=0, num_epoch=100, num_hidden=0, num_windows=[32], problem_type=1, seq_window_lengths=[8, 12], smi_window_lengths=[4, 8])
+---Parameter Search-----
+Namespace(batch_size=64, binary_th=0.0, checkpoint_path='', dataset_path='data/kiba/', is_log=0, learning_rate=0.001, log_dir='logs/', max_seq_len=1000, max_smi_len=100, num_classes=0, num_epoch=100, num_hidden=0, num_windows=[32], problem_type=1, seq_window_lengths=[8, 12], smi_window_lengths=[4, 8])
+---Parameter Search-----
+Namespace(batch_size=64, binary_th=0.0, checkpoint_path='', dataset_path='data/kiba/', is_log=0, learning_rate=0.001, log_dir='logs/', max_seq_len=1000, max_smi_len=100, num_classes=0, num_epoch=100, num_hidden=0, num_windows=[32], problem_type=1, seq_window_lengths=[8, 12], smi_window_lengths=[4, 8])
+---Parameter Search-----
+Namespace(batch_size=64, binary_th=0.0, checkpoint_path='', dataset_path='data/kiba/', is_log=0, learning_rate=0.001, log_dir='logs/', max_seq_len=1000, max_smi_len=100, num_classes=0, num_epoch=100, num_hidden=0, num_windows=[32], problem_type=1, seq_window_lengths=[8, 12], smi_window_lengths=[4, 8])
+---Parameter Search-----
+Namespace(batch_size=64, binary_th=0.0, checkpoint_path='', dataset_path='data/kiba/', is_log=0, learning_rate=0.001, log_dir='logs/', max_seq_len=1000, max_smi_len=100, num_classes=0, num_epoch=100, num_hidden=0, num_windows=[32], problem_type=1, seq_window_lengths=[8, 12], smi_window_lengths=[4, 8])
+---Parameter Search-----
+Namespace(batch_size=64, binary_th=0.0, checkpoint_path='', dataset_path='data/kiba/', is_log=0, learning_rate=0.001, log_dir='logs/', max_seq_len=1000, max_smi_len=100, num_classes=0, num_epoch=100, num_hidden=0, num_windows=[32], problem_type=1, seq_window_lengths=[8, 12], smi_window_lengths=[4, 8])
+---Parameter Search-----
+Namespace(batch_size=64, binary_th=0.0, checkpoint_path='', dataset_path='data/kiba/', is_log=0, learning_rate=0.001, log_dir='logs/', max_seq_len=1000, max_smi_len=100, num_classes=0, num_epoch=100, num_hidden=0, num_windows=[32], problem_type=1, seq_window_lengths=[8, 12], smi_window_lengths=[4, 8])
+---Parameter Search-----
+Namespace(batch_size=64, binary_th=0.0, checkpoint_path='', dataset_path='data/kiba/', is_log=0, learning_rate=0.001, log_dir='logs/', max_seq_len=1000, max_smi_len=100, num_classes=0, num_epoch=100, num_hidden=0, num_windows=[32], problem_type=1, seq_window_lengths=[8, 12], smi_window_lengths=[4, 8])
+---Parameter Search-----
+Namespace(batch_size=64, binary_th=0.0, checkpoint_path='', dataset_path='data/kiba/', is_log=0, learning_rate=0.001, log_dir='logs/', max_seq_len=1000, max_smi_len=100, num_classes=0, num_epoch=100, num_hidden=0, num_windows=[32], problem_type=1, seq_window_lengths=[8, 12], smi_window_lengths=[4, 8])
+---Parameter Search-----
+Namespace(batch_size=64, binary_th=0.0, checkpoint_path='', dataset_path='data/kiba/', is_log=0, learning_rate=0.001, log_dir='logs/', max_seq_len=1000, max_smi_len=100, num_classes=0, num_epoch=100, num_hidden=0, num_windows=[32], problem_type=1, seq_window_lengths=[8, 12], smi_window_lengths=[4, 8])
+---Parameter Search-----
+Namespace(batch_size=64, binary_th=0.0, checkpoint_path='', dataset_path='data/kiba/', is_log=0, learning_rate=0.001, log_dir='logs/', max_seq_len=1000, max_smi_len=100, num_classes=0, num_epoch=100, num_hidden=0, num_windows=[32], problem_type=1, seq_window_lengths=[8, 12], smi_window_lengths=[4, 8])
+---Parameter Search-----
+Namespace(batch_size=64, binary_th=0.0, checkpoint_path='', dataset_path='data/kiba/', is_log=0, learning_rate=0.001, log_dir='logs/', max_seq_len=1000, max_smi_len=100, num_classes=0, num_epoch=200, num_hidden=0, num_windows=[32], problem_type=2, seq_window_lengths=[12], smi_window_lengths=[8])
+---Parameter Search-----
+Namespace(batch_size=64, binary_th=0.0, checkpoint_path='', dataset_path='data/kiba/', is_log=0, learning_rate=0.001, log_dir='logs/', max_seq_len=1000, max_smi_len=100, num_classes=0, num_epoch=200, num_hidden=0, num_windows=[32], problem_type=2, seq_window_lengths=[12], smi_window_lengths=[8])
+---Parameter Search-----
+---Parameter Search-----
+Namespace(batch_size=64, binary_th=0.0, checkpoint_path='', dataset_path='data/kiba/', is_log=0, learning_rate=0.001, log_dir='logs/', max_seq_len=1000, max_smi_len=100, num_classes=0, num_epoch=200, num_hidden=0, num_windows=[32], problem_type=2, seq_window_lengths=[8, 12], smi_window_lengths=[4, 8])
+---Parameter Search-----
+---Parameter Search-----
+Setting 2
+Namespace(batch_size=64, binary_th=0.0, checkpoint_path='', dataset_path='data/kiba/', is_log=0, learning_rate=0.001, log_dir='logs/', max_seq_len=1000, max_smi_len=100, num_classes=0, num_epoch=200, num_hidden=0, num_windows=[32], problem_type=2, seq_window_lengths=[8, 12], smi_window_lengths=[4, 8])
+Namespace(batch_size=64, binary_th=0.0, checkpoint_path='', dataset_path='data/kiba/', is_log=0, learning_rate=0.001, log_dir='logs/', max_seq_len=1000, max_smi_len=100, num_classes=0, num_epoch=200, num_hidden=0, num_windows=[32], problem_type=2, seq_window_lengths=[8, 12], smi_window_lengths=[4, 8])
+Setting 2
+Namespace(batch_size=64, binary_th=0.0, checkpoint_path='', dataset_path='data/kiba/', is_log=0, learning_rate=0.001, log_dir='logs/', max_seq_len=1000, max_smi_len=100, num_classes=0, num_epoch=200, num_hidden=0, num_windows=[32], problem_type=2, seq_window_lengths=[8, 12], smi_window_lengths=[4, 8])
+---Parameter Search-----
+Namespace(batch_size=64, binary_th=0.0, checkpoint_path='', dataset_path='data/kiba/', is_log=0, learning_rate=0.001, log_dir='logs/', max_seq_len=1000, max_smi_len=100, num_classes=0, num_epoch=200, num_hidden=0, num_windows=[32], problem_type=2, seq_window_lengths=[8, 12], smi_window_lengths=[4, 8])
+---Parameter Search-----
+Namespace(batch_size=64, binary_th=0.0, checkpoint_path='', dataset_path='data/kiba/', is_log=0, learning_rate=0.001, log_dir='logs/', max_seq_len=1000, max_smi_len=100, num_classes=0, num_epoch=200, num_hidden=0, num_windows=[32], problem_type=2, seq_window_lengths=[8, 12], smi_window_lengths=[4, 8])
+---Parameter Search-----
+Namespace(batch_size=64, binary_th=0.0, checkpoint_path='', dataset_path='data/kiba/', is_log=0, learning_rate=0.001, log_dir='logs/', max_seq_len=1000, max_smi_len=100, num_classes=0, num_epoch=200, num_hidden=0, num_windows=[32], problem_type=2, seq_window_lengths=[8, 12], smi_window_lengths=[4, 8])
+---Parameter Search-----
+Namespace(batch_size=64, binary_th=0.0, checkpoint_path='', dataset_path='data/kiba/', is_log=0, learning_rate=0.001, log_dir='logs/', max_seq_len=1000, max_smi_len=100, num_classes=0, num_epoch=200, num_hidden=0, num_windows=[32], problem_type=2, seq_window_lengths=[8, 12], smi_window_lengths=[4, 8])
+---Parameter Search-----
+Namespace(batch_size=64, binary_th=0.0, checkpoint_path='', dataset_path='data/davis/', is_log=0, learning_rate=0.001, log_dir='logs/', max_seq_len=1000, max_smi_len=100, num_classes=0, num_epoch=200, num_hidden=0, num_windows=[32], problem_type=1, seq_window_lengths=[8, 12], smi_window_lengths=[4, 8])
+Namespace(batch_size=64, binary_th=0.0, checkpoint_path='', dataset_path='data/davis/', is_log=0, learning_rate=0.001, log_dir='logs/', max_seq_len=1000, max_smi_len=100, num_classes=0, num_epoch=200, num_hidden=0, num_windows=[32], problem_type=1, seq_window_lengths=[8, 12], smi_window_lengths=[4, 8])
+Namespace(batch_size=64, binary_th=0.0, checkpoint_path='', dataset_path='data/davis/', is_log=0, learning_rate=0.001, log_dir='logs/', max_seq_len=1000, max_smi_len=100, num_classes=0, num_epoch=200, num_hidden=0, num_windows=[32], problem_type=2, seq_window_lengths=[8, 12], smi_window_lengths=[4, 8])
+---Parameter Search-----
+---Parameter Search-----
+Setting 2
+Namespace(batch_size=64, binary_th=0.0, checkpoint_path='', dataset_path='data/davis/', is_log=0, learning_rate=0.001, log_dir='logs/', max_seq_len=1000, max_smi_len=100, num_classes=0, num_epoch=200, num_hidden=0, num_windows=[32], problem_type=2, seq_window_lengths=[8, 12], smi_window_lengths=[4, 8])
+---Parameter Search-----
+Namespace(batch_size=64, binary_th=0.0, checkpoint_path='', dataset_path='data/davis/', is_log=0, learning_rate=0.001, log_dir='logs/', max_seq_len=1000, max_smi_len=100, num_classes=0, num_epoch=1, num_hidden=0, num_windows=[32], problem_type=2, seq_window_lengths=[8, 12], smi_window_lengths=[4, 8])
+---Parameter Search-----
+Namespace(batch_size=64, binary_th=0.0, checkpoint_path='', dataset_path='data/davis/', is_log=0, learning_rate=0.001, log_dir='logs/', max_seq_len=0, max_smi_len=0, num_classes=0, num_epoch=1, num_hidden=0, num_windows=None, problem_type=2, seq_window_lengths=None, smi_window_lengths=None)
+---Parameter Search-----
+Namespace(batch_size=64, binary_th=0.0, checkpoint_path='', dataset_path='data/davis/', is_log=0, learning_rate=0.001, log_dir='logs/', max_seq_len=1000, max_smi_len=100, num_classes=0, num_epoch=1, num_hidden=0, num_windows=[32], problem_type=2, seq_window_lengths=[8, 12], smi_window_lengths=[4, 8])
+---Parameter Search-----
+Namespace(batch_size=64, binary_th=0.0, checkpoint_path='', dataset_path='data/davis/', is_log=0, learning_rate=0.001, log_dir='logs/', max_seq_len=1000, max_smi_len=100, num_classes=0, num_epoch=1, num_hidden=0, num_windows=[32], problem_type=2, seq_window_lengths=[8, 12], smi_window_lengths=[4, 8])
+---Parameter Search-----
+---Parameter Search-----
+Setting 2
+Namespace(batch_size=64, binary_th=0.0, checkpoint_path='', dataset_path='data/davis/', is_log=0, learning_rate=0.001, log_dir='logs/', max_seq_len=1000, max_smi_len=100, num_classes=0, num_epoch=1, num_hidden=0, num_windows=[32], problem_type=2, seq_window_lengths=[8, 12], smi_window_lengths=[4, 8])
+---Parameter Search-----
+Namespace(batch_size=64, binary_th=0.0, checkpoint_path='', dataset_path='data/davis/', is_log=0, learning_rate=0.001, log_dir='logs/', max_seq_len=1000, max_smi_len=100, num_classes=0, num_epoch=1, num_hidden=0, num_windows=[32], problem_type=2, seq_window_lengths=[8, 12], smi_window_lengths=[4, 8])
+---Parameter Search-----
+---Parameter Search-----
+Setting 2
+Namespace(batch_size=64, binary_th=0.0, checkpoint_path='', dataset_path='data/kiba/', is_log=0, learning_rate=0.001, log_dir='logs/', max_seq_len=1000, max_smi_len=100, num_classes=0, num_epoch=1, num_hidden=0, num_windows=[32], problem_type=2, seq_window_lengths=[8, 12], smi_window_lengths=[4, 8])
+---Parameter Search-----
+Namespace(batch_size=64, binary_th=0.0, checkpoint_path='', dataset_path='/home/ashutosh/scripts/CSat-DTA/data/kiba/', is_log=0, learning_rate=0.001, log_dir='logs/', max_seq_len=1000, max_smi_len=100, num_classes=0, num_epoch=200, num_hidden=0, num_windows=[32], problem_type=2, seq_window_lengths=[8, 12], smi_window_lengths=[4, 8])
+---Parameter Search-----
+Namespace(batch_size=64, binary_th=0.0, checkpoint_path='', dataset_path='/home/ashutosh/scripts/CSat-DTA/data/kiba/', is_log=0, learning_rate=0.001, log_dir='logs/', max_seq_len=1000, max_smi_len=100, num_classes=0, num_epoch=200, num_hidden=0, num_windows=[32], problem_type=2, seq_window_lengths=[12], smi_window_lengths=[8])
+---Parameter Search-----
+Namespace(batch_size=256, binary_th=0.0, checkpoint_path='', dataset_path='data/kiba/', is_log=0, learning_rate=0.001, log_dir='logs/', max_seq_len=0, max_smi_len=0, num_classes=0, num_epoch=100, num_hidden=0, num_windows=[32], problem_type=1, seq_window_lengths=None, smi_window_lengths=None)
+---Parameter Search-----
+Namespace(batch_size=256, binary_th=0.0, checkpoint_path='', dataset_path='data/kiba/', is_log=0, learning_rate=0.001, log_dir='logs/', max_seq_len=0, max_smi_len=0, num_classes=0, num_epoch=100, num_hidden=0, num_windows=[32], problem_type=1, seq_window_lengths=None, smi_window_lengths=None)
+Namespace(batch_size=256, binary_th=0.0, checkpoint_path='', dataset_path='data/kiba/', is_log=0, learning_rate=0.001, log_dir='logs/', max_seq_len=0, max_smi_len=0, num_classes=0, num_epoch=100, num_hidden=0, num_windows=[32], problem_type=1, seq_window_lengths=None, smi_window_lengths=None)
+Namespace(batch_size=256, binary_th=0.0, checkpoint_path='', dataset_path='data/kiba/', is_log=0, learning_rate=0.001, log_dir='logs/', max_seq_len=0, max_smi_len=0, num_classes=0, num_epoch=100, num_hidden=0, num_windows=[32], problem_type=1, seq_window_lengths=None, smi_window_lengths=None)
+Namespace(batch_size=64, binary_th=0.0, checkpoint_path='', dataset_path='data/kiba/', is_log=0, learning_rate=0.001, log_dir='logs/', max_seq_len=1000, max_smi_len=100, num_classes=0, num_epoch=200, num_hidden=0, num_windows=[32], problem_type=1, seq_window_lengths=[12], smi_window_lengths=[8])
+Namespace(batch_size=64, binary_th=0.0, checkpoint_path='', dataset_path='data/kiba/', is_log=0, learning_rate=0.001, log_dir='logs/', max_seq_len=1000, max_smi_len=100, num_classes=0, num_epoch=200, num_hidden=0, num_windows=[32], problem_type=1, seq_window_lengths=[12], smi_window_lengths=[8])
+---Parameter Search-----
+Namespace(batch_size=64, binary_th=0.0, checkpoint_path='', dataset_path='data/kiba/', is_log=0, learning_rate=0.001, log_dir='logs/', max_seq_len=1000, max_smi_len=100, num_classes=0, num_epoch=200, num_hidden=0, num_windows=[32], problem_type=2, seq_window_lengths=[12], smi_window_lengths=[8])
+Namespace(batch_size=64, binary_th=0.0, checkpoint_path='', dataset_path='data/kiba/', is_log=0, learning_rate=0.001, log_dir='logs/', max_seq_len=1000, max_smi_len=100, num_classes=0, num_epoch=200, num_hidden=0, num_windows=[32], problem_type=2, seq_window_lengths=[12], smi_window_lengths=[8])
+---Parameter Search-----
+Namespace(batch_size=64, binary_th=0.0, checkpoint_path='', dataset_path='data/kiba/', is_log=0, learning_rate=0.001, log_dir='logs/', max_seq_len=1000, max_smi_len=100, num_classes=0, num_epoch=200, num_hidden=0, num_windows=[32], problem_type=1, seq_window_lengths=[12], smi_window_lengths=[8])
+---Parameter Search-----
+Namespace(batch_size=64, binary_th=0.0, checkpoint_path='', dataset_path='data/davis/', is_log=0, learning_rate=0.001, log_dir='logs/', max_seq_len=1000, max_smi_len=100, num_classes=0, num_epoch=200, num_hidden=0, num_windows=[32], problem_type=1, seq_window_lengths=[12], smi_window_lengths=[8])
+---Parameter Search-----
+Namespace(batch_size=64, binary_th=0.0, checkpoint_path='', dataset_path='data/davis/', is_log=0, learning_rate=0.001, log_dir='logs/', max_seq_len=1000, max_smi_len=100, num_classes=0, num_epoch=200, num_hidden=0, num_windows=[32], problem_type=1, seq_window_lengths=[12], smi_window_lengths=[8])
+---Parameter Search-----
