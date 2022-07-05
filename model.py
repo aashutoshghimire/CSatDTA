@@ -9,6 +9,13 @@ from keras.utils import plot_model
 from keras.layers import Dense, Dropout, Activation
 from keras.models import Model
 from keras.callbacks import ModelCheckpoint, EarlyStopping
+import matplotlib.pyplot as plt
+import seaborn as sns
+
+import tensorflow_probability as tfp
+tfd = tfp.distributions
+tfpl = tfp.layers
+
 import sys
 
 def cindex_score(y_true, y_pred):
@@ -24,6 +31,53 @@ def cindex_score(y_true, y_pred):
 
     return tf.where(tf.equal(g, 0), 0.0, g/f) #select
 
+
+# def prior(kernel_size, bias_size, dtype=None):
+#     n = kernel_size + bias_size
+#     prior_model = tf.keras.Sequential(
+#         [
+#             tfp.layers.DistributionLambda(
+#                 lambda t: tfp.distributions.MultivariateNormalDiag(
+#                     loc=tf.zeros(n), scale_diag=tf.ones(n)
+#                 )
+#             )
+#         ]
+#     )
+#
+# # Define variational posterior weight distribution as multivariate Gaussian.
+# # Note that the learnable parameters for this distribution are the means,
+# # variances, and covariances.
+# def posterior(kernel_size, bias_size, dtype=None):
+#     n = kernel_size + bias_size
+#     posterior_model = tf.keras.Sequential(
+#         [
+#             tfp.layers.VariableLayer(
+#                 tfp.layers.MultivariateNormalTriL.params_size(n), dtype=dtype
+#             ),
+#             tfp.layers.MultivariateNormalTriL(n),
+#         ]
+#     )
+#     return posterior_model
+
+def get_prior(kernel_size, bias_size, dtype=None):
+    n = kernel_size + bias_size
+    prior_model = tf.keras.Sequential([
+        tfpl.DistributionLambda(lambda t: tfd.MultivariateNormalDiag(
+        loc=tf.zeros(n), scale_diag=tf.ones(n)))
+    ])
+    return prior_model
+
+def get_posterior(kernel_size, bias_size, dtype=None):
+    n = kernel_size + bias_size
+    posterior_model = tf.keras.Sequential([
+    tfpl.VariableLayer(tfpl.MultivariateNormalTriL.params_size(n), dtype=dtype),
+    tfpl.MultivariateNormalTriL(n)
+    ])
+    return posterior_model
+
+
+def nll(y_true, y_pred):
+    return -y_pred.log_prob(y_true)
 def CSatDTAmodel(XD, XT,  Y, label_row_inds, label_col_inds, prfmeasure, FLAGS, labeled_sets, val_sets): ## BURAYA DA FLAGS LAZIM????
     
     paramset1 = FLAGS.num_windows                              #[32]#[32,  512] #[32, 128]  # filter numbers
@@ -117,47 +171,92 @@ def CSatDTAmodel(XD, XT,  Y, label_row_inds, label_col_inds, prfmeasure, FLAGS, 
                                         num_heads=5, relative_encodings=True)
 
                         encode_protein = GlobalMaxPooling1D()(x_protein)
+
                 
                 
                         encode_interaction = keras.layers.concatenate([encode_smiles, encode_protein], axis=-1) #merge.Add()([encode_smiles, encode_protein])
+                        prior_model = get_prior(3, 1)
+                        print('Trainable variables for prior model: ', prior_model.layers[0].trainable_variables)
+                        print('Sampling from the prior distribution:\n', prior_model.call(tf.constant(1.0)).sample(5))
+                        posterior_model = get_posterior(3, 1)
+                        print('\nTrainable variables for posterior model: ', posterior_model.layers[0].trainable_variables)
+                        print('Sampling from the posterior distribution:\n', posterior_model.call(tf.constant(1.0)).sample(5))
+                        interactionModel = tf.keras.Sequential([
+                            tfpl.DenseVariational(input_shape=(1,), units=8,
+                                                  make_prior_fn=get_prior,
+                                                  make_posterior_fn=get_posterior,
+                                                  kl_weight=1 / train_prots.shape[0],
+                                                  activation='sigmoid'),
+                            tfpl.DenseVariational(units=tfpl.IndependentNormal.params_size(1),
+                                                  make_prior_fn=get_prior,
+                                                  make_posterior_fn=get_posterior,
+                                                  kl_weight=1 / train_prots.shape[0]),
+                            tfpl.IndependentNormal(1)
+                        ])
+
+                        # model.compile(loss=nll, optimizer=tf.keras.optimizers.RMSprop(learning_rate=0.005))
+                        # model.summary()
+                        # train_size = 4000
+                        # features = keras.layers.BatchNormalization()(encode_interaction)
+                        # hidden_units = [8, 8]
+                        # for units in hidden_units:
+                        #     features = tfp.layers.DenseVariational(
+                        #         units=units,
+                        #         make_prior_fn=prior,
+                        #         make_posterior_fn=posterior,
+                        #         kl_weight=1 / train_size,
+                        #         activation="sigmoid",
+                        #     )(features)
+                        #
+                        #     # The output is deterministic: a single point estimate.
+                        # outputs = layers.Dense(units=1)(features)
+                        # model = keras.Model(inputs=inputs, outputs=outputs)
+
+
+                        # print(type(model))
+                        # sys.exit()
+
+####################    Old codes from here
 
                         # Fully connected 
-                        FC1 = Dense(1024, activation='relu')(encode_interaction)
-                        FC2 = Dropout(0.1)(FC1)
-                        FC2 = Dense(1024, activation='relu')(FC2)
-                        FC2 = Dropout(0.1)(FC2)
-                        FC2 = Dense(512, activation='relu')(FC2)
+                        # FC1 = Dense(1024, activation='relu')(encode_interaction)
+                        # FC2 = Dropout(0.1)(FC1)
+                        # FC2 = Dense(1024, activation='relu')(FC2)
+                        # FC2 = Dropout(0.1)(FC2)
+                        # FC2 = Dense(512, activation='relu')(FC2)
 
 
                         # And add a logistic regression on top
-                        predictions = Dense(1, kernel_initializer='glorot_normal')(FC2) #OR no activation, rght now it's between 0-1, do I want this??? activation='sigmoid'
-                        mirrored_strategy = tf.distribute.MirroredStrategy()
-                        with mirrored_strategy.scope():
-                                interactionModel = Model(inputs=[XDinput, XTinput], outputs=[predictions])
+                        # predictions = Dense(1, kernel_initializer='glorot_normal')(FC2) #OR no activation, rght now it's between 0-1, do I want this??? activation='sigmoid'
+                        # mirrored_strategy = tf.distribute.MirroredStrategy()
+                        # with mirrored_strategy.scope():
+                                # interactionModel = Model(inputs=[XDinput, XTinput], outputs=[predictions])
 
-                                interactionModel.compile(optimizer='adadelta', loss='mean_squared_error', metrics=[cindex_score]) 
-                                print(interactionModel.summary())
-                                plot_model(interactionModel, to_file='figures/build_combined_categorical.png')
-                                gridmodel = interactionModel
+                                # interactionModel.compile(optimizer='adadelta', loss='mean_squared_error', metrics=[cindex_score])
+                        interactionModel.compile(loss=nll, optimizer=tf.keras.optimizers.RMSprop(learning_rate=0.005))
 
-                                es = EarlyStopping(monitor='val_loss', mode='min', verbose=1, patience=15)
-                                gridres = gridmodel.fit(([np.array(train_drugs),np.array(train_prots) ]), np.array(train_Y), batch_size=batchsz, epochs=epoch, 
-                                        validation_data=( ([np.array(val_drugs), np.array(val_prots) ]), np.array(val_Y)),  shuffle=False, callbacks=[es] ) 
+                        print(interactionModel.summary())
+                        # plot_model(interactionModel, to_file='figures/build_combined_categorical.png')
+                        gridmodel = interactionModel
+
+                        es = EarlyStopping(monitor='val_loss', mode='min', verbose=1, patience=15)
+                        gridres = gridmodel.fit(([np.array(train_drugs),np.array(train_prots) ]), np.array(train_Y), batch_size=batchsz, epochs=epoch,
+                                validation_data=( ([np.array(val_drugs), np.array(val_prots) ]), np.array(val_Y)),  shuffle=False, callbacks=[es] )
 
 
-                                predicted_labels = gridmodel.predict([np.array(val_drugs), np.array(val_prots) ])
-                                loss, rperf2 = gridmodel.evaluate(([np.array(val_drugs),np.array(val_prots) ]), np.array(val_Y), verbose=0)
-                                
-                                gridmodel.save("data/models/model.h5")
-                                print("Saved model to disk")
-                                # list all data in history
-                                print(gridres.history.keys())
-                                # summarize history for accuracy
-                                plotacc(gridres, foldind)
-                                # summarize history for loss
-                                plotloss(gridres, foldind)
-                                # summarize history for scatter
-                                plotscatter(foldind, val_Y, predicted_labels)
+                        predicted_labels = gridmodel.predict([np.array(val_drugs), np.array(val_prots) ])
+                        loss, rperf2 = gridmodel.evaluate(([np.array(val_drugs),np.array(val_prots) ]), np.array(val_Y), verbose=0)
+
+                        gridmodel.save("data/models/model.h5")
+                        print("Saved model to disk")
+                        # list all data in history
+                        print(gridres.history.keys())
+                        # summarize history for accuracy
+                        plotacc(gridres, foldind)
+                        # summarize history for loss
+                        plotloss(gridres, foldind)
+                        # summarize history for scatter
+                        plotscatter(foldind, val_Y, predicted_labels)
 
                         rperf = prfmeasure(val_Y, predicted_labels)
                         rperf = rperf[0]
