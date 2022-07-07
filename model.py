@@ -193,34 +193,34 @@ def CSatDTAmodel(XD, XT,  Y, label_row_inds, label_col_inds, prfmeasure, FLAGS, 
 
                 for param3ind in range(len(paramset3)):
                         param3value = paramset3[param3ind]
-                        mirrored_strategy = tf.distribute.MirroredStrategy()
-                        with mirrored_strategy.scope():
-                            interactionModel = BuildModel(param1value, param2value, param3value, FLAGS)
-                            # mirrored_strategy = tf.distribute.MirroredStrategy()
-                            # with mirrored_strategy.scope():
-                            # interactionModel.compile(optimizer='adadelta', loss=negloglik, metrics=[cindex_score])
-                            interactionModel.compile(optimizer='adadelta', loss=negloglik, metrics=[tf.keras.metrics.RootMeanSquaredError()])
-                            print(interactionModel.summary())
-                            # plot_model(interactionModel, to_file='figures/build_combined_categorical.png')
-                            gridmodel = interactionModel
+                        # mirrored_strategy = tf.distribute.MirroredStrategy()
+                        # with mirrored_strategy.scope():
+                        interactionModel = BuildModel(param1value, param2value, param3value, FLAGS)
+                        # mirrored_strategy = tf.distribute.MirroredStrategy()
+                        # with mirrored_strategy.scope():
+                        # interactionModel.compile(optimizer='adadelta', loss=negloglik, metrics=[cindex_score])
+                        interactionModel.compile(optimizer='adadelta', loss=negloglik, metrics=[tf.keras.metrics.RootMeanSquaredError()])
+                        print(interactionModel.summary())
+                        # plot_model(interactionModel, to_file='figures/build_combined_categorical.png')
+                        gridmodel = interactionModel
 
-                            es = EarlyStopping(monitor='val_loss', mode='min', verbose=1, patience=15)
-                            gridres = gridmodel.fit(([np.array(train_drugs),np.array(train_prots) ]), np.array(train_Y), batch_size=batchsz, epochs=epoch, validation_data=( ([np.array(val_drugs), np.array(val_prots) ]), np.array(val_Y)),  shuffle=False, callbacks=[es] )
+                        es = EarlyStopping(monitor='val_loss', mode='min', verbose=1, patience=15)
+                        gridres = gridmodel.fit(([np.array(train_drugs),np.array(train_prots) ]), np.array(train_Y), batch_size=batchsz, epochs=epoch, validation_data=( ([np.array(val_drugs), np.array(val_prots) ]), np.array(val_Y)),  shuffle=False, callbacks=[es] )
 
 
-                            predicted_labels = gridmodel.predict([np.array(val_drugs), np.array(val_prots) ])
-                            loss, rperf2 = gridmodel.evaluate(([np.array(val_drugs),np.array(val_prots) ]), np.array(val_Y), verbose=0)
+                        predicted_labels = gridmodel.predict([np.array(val_drugs), np.array(val_prots) ])
+                        loss, rperf2 = gridmodel.evaluate(([np.array(val_drugs),np.array(val_prots) ]), np.array(val_Y), verbose=0)
 
-                            gridmodel.save("data/models/model.h5")
-                            print("Saved model to disk")
-                            # list all data in history
-                            print(gridres.history.keys())
-                            # summarize history for accuracy
-                            plotacc(gridres, foldind)
-                            # summarize history for loss
-                            plotloss(gridres, foldind)
-                            # summarize history for scatter
-                            plotscatter(foldind, val_Y, predicted_labels)
+                        gridmodel.save("data/models/model.h5")
+                        print("Saved model to disk")
+                        # list all data in history
+                        print(gridres.history.keys())
+                        # summarize history for accuracy
+                        plotacc(gridres, foldind)
+                        # summarize history for loss
+                        plotloss(gridres, foldind)
+                        # summarize history for scatter
+                        plotscatter(foldind, val_Y, predicted_labels)
 
                         rperf = prfmeasure(val_Y, predicted_labels)
                         rperf = rperf[0]
