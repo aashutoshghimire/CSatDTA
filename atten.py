@@ -1,10 +1,11 @@
 import keras
-from keras.layers import Layer
+from tensorflow.keras.layers import Layer
 import tensorflow as tf
-from keras import backend as K
+# from keras import backend as K
+from tensorflow.keras import backend as K
 # from conv import *
 from conv import _normalize_depth_vars, _conv_layer1d, _conv_layer1r
-from keras.layers import Reshape
+from tensorflow.keras.layers import Reshape
 from keras import initializers
 
 ## ######################## ##
@@ -95,9 +96,9 @@ class AttentionAugmentation2D(Layer):
 
         qk_shape = [self._batch, self.num_heads, self._height * self._width, self.depth_k // self.num_heads]
         v_shape = [self._batch, self.num_heads, self._height * self._width, self.depth_v // self.num_heads]
-        flat_q = K.reshape(q, K.stack(qk_shape))
-        flat_k = K.reshape(k, K.stack(qk_shape))
-        flat_v = K.reshape(v, K.stack(v_shape))
+        flat_q = K.reshape(q, tf.stack(qk_shape))
+        flat_k = K.reshape(k, tf.stack(qk_shape))
+        flat_v = K.reshape(v, tf.stack(v_shape))
 
         # [Batch, num_heads, HW, HW]
         logits = tf.matmul(flat_q, flat_k, transpose_b=True)
@@ -112,7 +113,7 @@ class AttentionAugmentation2D(Layer):
         attn_out = tf.matmul(weights, flat_v)
 
         attn_out_shape = [self._batch, self.num_heads, self._height, self._width, self.depth_v // self.num_heads]
-        attn_out_shape = K.stack(attn_out_shape)
+        attn_out_shape = tf.stack(attn_out_shape)
         attn_out = K.reshape(attn_out, attn_out_shape)
         attn_out = self.combine_heads_2d(attn_out)
         # [batch, height, width, depth_v]
@@ -144,7 +145,7 @@ class AttentionAugmentation2D(Layer):
         self._height = height
         self._width = width
 
-        ret_shape = K.stack([batch, height, width,  self.num_heads, channels // self.num_heads])
+        ret_shape = tf.stack([batch, height, width,  self.num_heads, channels // self.num_heads])
         split = K.reshape(ip, ret_shape)
         transpose_axes = (0, 3, 1, 2, 4)
         split = K.permute_dimensions(split, transpose_axes)
@@ -184,10 +185,13 @@ class AttentionAugmentation2D(Layer):
         shape = K.shape(x)
         shape = [shape[i] for i in range(3)]
         B, Nh, L, = shape
-        col_pad = K.zeros(K.stack([B, Nh, L, 1]))
+        # col_pad = K.zeros(K.stack([B, Nh, L, 1]))
+        col_pad = tf.zeros(tf.stack([B, Nh, L, 1]))
+        # col_pad = tf.zeros([B, Nh, L, 1])
+
         x = K.concatenate([x, col_pad], axis=3)
         flat_x = K.reshape(x, [B, Nh, L * 2 * L])
-        flat_pad = K.zeros(K.stack([B, Nh, L - 1]))
+        flat_pad = tf.zeros(tf.stack([B, Nh, L - 1]))
         flat_x_padded = K.concatenate([flat_x, flat_pad], axis=2)
         final_x = K.reshape(flat_x_padded, [B, Nh, L + 1, 2 * L - 1])
         final_x = final_x[:, :, :L, L - 1:]
@@ -201,7 +205,7 @@ class AttentionAugmentation2D(Layer):
         shape = [shape[i] for i in range(5)]
 
         a, b = shape[-2:]
-        ret_shape = K.stack(shape[:-2] + [a * b])
+        ret_shape = tf.stack(shape[:-2] + [a * b])
         # [batch, height, width, depth_v]
         return K.reshape(transposed, ret_shape)
 
@@ -243,7 +247,7 @@ def augmented_conv1d(ip, shape, filters, kernel_size=3, strides=1, padding = 'sa
     attn_out = AttentionAugmentation2D(depth_k, depth_v, num_heads, relative_encodings)(qkv_conv)
     attn_out = _conv_layer1r(attn_out, t_n, depth_v,  depth_v, 1, strides, padding = 'same')
     
-    output = keras.layers.concatenate([conv_out, attn_out], axis=-1)
+    output = tf.keras.layers.concatenate([conv_out, attn_out], axis=-1)
    
     reshape = Reshape((t_n, filters))(output)
 
